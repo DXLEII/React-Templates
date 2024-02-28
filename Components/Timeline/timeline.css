@@ -1,0 +1,114 @@
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px 0;
+}
+
+.timeline-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    background-color: #123456;
+    z-index: 0;
+}
+
+.timeline-node {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 1;
+}
+
+.timeline-node.left .timeline-content {
+    margin-left: 10%;
+    margin-right: 30%;
+}
+
+.timeline-node.right .timeline-content {
+    margin-right: 10%;
+    margin-left: 30%;
+}
+
+.timeline-content {
+    padding: 15px;
+    background-color: #2e7d9b;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff; 
+    border-bottom: 2px solid #ffffff; 
+    padding-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 16px;
+    color: #ffffff; 
+    line-height: 1.6;
+    margin-bottom: 15px; 
+}
+
+.timeline-content ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.timeline-content li {
+    color: #ffffff; 
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.timeline-node.left .content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -16px;
+    transform: translateY(-50%);
+    border-width: 8px 8px 8px 0;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+
+.timeline-node.right .content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -16px;
+    transform: translateY(-50%);
+    border-width: 8px 0 8px 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent white;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-container::before {
+        left: 50%; /* Align with mobile timeline content */
+    }
+
+    .timeline-node.left .timeline-content,
+    .timeline-node.right .timeline-content {
+        margin: 0 10%; /* Provide equal margin on both sides for mobile */
+    }
+
+    .timeline-node.left .content::before,
+    .timeline-node.right .content::before {
+        left: -16px; /* Align arrows with mobile timeline content */
+        right: auto;
+    }
+}
