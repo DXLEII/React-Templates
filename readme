@@ -6,7 +6,7 @@ This repository contains reusable React components and templates that you can ea
 
 1. **Clone the Repository:** Clone this repository to your local machine using the following command:
 
-git clone https://github.com/your-username/react-templates.git
+ git clone https://github.com/DXLEII/React-Templates.git
 
 
 2. **Add Components to Your Project:**
@@ -34,5 +34,7 @@ git clone https://github.com/your-username/react-templates.git
 - **FAQTile:** A customizable FAQ tile for display FAQs on your webpage.
 - **NavBar:** A navbar for navigating your webpage.
 - **ContactForm:** A contact form for your webpage including a googlemaps Iframe.
+- **TestimonialTile:** A testimonial section or client rating section for your webpage.
+
 Feel free to explore and integrate these components into your projects as needed!
 

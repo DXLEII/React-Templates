@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import './styles/navbar.css';
-import logo from '../imgs/placeholder.jpg';
+import './navbar.css';
+import logo from './placeholder.jpg';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -56,3 +56,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+//You can change the src the logo is imported from to  change the image on the navbar

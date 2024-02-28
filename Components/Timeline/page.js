@@ -18,3 +18,5 @@ const nodes = [
 
 
 <TimelineComponent nodes={nodes} />
+
+//you can continue to add more title and items onto the nodes function and it will continue the timeline down from left to right. 
