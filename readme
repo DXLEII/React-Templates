@@ -26,12 +26,14 @@ git clone https://github.com/your-username/react-templates.git
   <ComponentName />
   ```
   You can find examples of the imported components as they would be on your page on the page.js of each component
-  
+
 ## Available Components
 
 - **HeroSection:** A customizable hero section component with background video support.
 - **TimelineComponent:** A timeline component for displaying sequential information.
-
+- **FAQTile:** A customizable FAQ tile for display FAQs on your webpage.
+- **NavBar:** A navbar for navigating your webpage.
+- **ContactForm:** A contact form for your webpage including a googlemaps Iframe.
 Feel free to explore and integrate these components into your projects as needed!
 
 ## License
