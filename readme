@@ -36,6 +36,3 @@ git clone https://github.com/your-username/react-templates.git
 - **ContactForm:** A contact form for your webpage including a googlemaps Iframe.
 Feel free to explore and integrate these components into your projects as needed!
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
