@@ -1,0 +1,38 @@
+# React Templates
+
+This repository contains reusable React components and templates that you can easily integrate into your projects.
+
+## Usage
+
+1. **Clone the Repository:** Clone this repository to your local machine using the following command:
+
+git clone https://github.com/your-username/react-templates.git
+
+
+2. **Add Components to Your Project:**
+- Navigate to the `src/components` directory in this repository.
+- Copy the desired component's JavaScript (*.js) and CSS (*.css) files into your project's corresponding directories.
+
+3. **Use Components in Your Project:**
+- Import the component into your React page or component file using:
+  ```javascript
+  import ComponentName from './path/to/ComponentName.js';
+  import './path/to/ComponentName.css'; // Import the CSS file if necessary
+  ```
+
+4. **Integrate Component into Your Page:**
+- Use the imported component in your JSX code as needed:
+  ```javascript
+  <ComponentName />
+  ```
+
+## Available Components
+
+- **HeroSection:** A customizable hero section component with background video support.
+- **TimelineComponent:** A timeline component for displaying sequential information.
+
+Feel free to explore and integrate these components into your projects as needed!
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
