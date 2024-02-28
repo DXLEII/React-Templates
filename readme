@@ -25,7 +25,8 @@ git clone https://github.com/your-username/react-templates.git
   ```javascript
   <ComponentName />
   ```
-
+  You can find examples of the imported components as they would be on your page on the page.js of each component
+  
 ## Available Components
 
 - **HeroSection:** A customizable hero section component with background video support.

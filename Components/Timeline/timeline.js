@@ -1,47 +1,21 @@
 import React from 'react';
 import './styles/timelinecomponent.css';
 
-const TimelineComponent = () => {
+const TimelineComponent = ({ nodes }) => {
     return (
         <div className="timeline-container">
-            
-            <div className="timeline-node left">
-                <div className="timeline-content">
-                    <h3>Lorem Ipsum Dolor Sit Amet</h3>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    </ul>
+            {nodes.map((node, index) => (
+                <div className={`timeline-node ${index % 2 === 0 ? 'left' : 'right'}`} key={index}>
+                    <div className="timeline-content">
+                        <h3>{node.title}</h3>
+                        <ul>
+                            {node.items.map((item, itemIndex) => (
+                                <li key={itemIndex}>{item}</li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
-            </div>
-
-            <div className="timeline-node right">
-                <div className="timeline-content">
-                    <h3>Lorem Ipsum Dolor Sit Amet</h3>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div className="timeline-node left">
-                <div className="timeline-content">
-                    <h3>Lorem Ipsum Dolor Sit Amet</h3>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    </ul>
-                </div>
-            </div>
-            
+            ))}
         </div>
     );
 };

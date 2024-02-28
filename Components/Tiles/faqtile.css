@@ -1,0 +1,59 @@
+.faqtile-container {
+    border: 1px solid #d9c7b5;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+
+.faqtile-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.faqtile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faqtile-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.faqtile-question {
+    flex-grow: 1;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #42362d;
+}
+
+.faqtile-dropdown-icon {
+    font-size: 2rem;
+    color: #c0aa61;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.faqtile-container:hover .faqtile-dropdown-icon {
+    color: #e48954;
+}
+
+.faqtile-answer {
+    margin-top: 20px;
+    padding-left: 80px; 
+    color: #8c715d;
+    font-size: 1.5rem;
+    border-top: 1px dashed #d9c7b5;
+    padding-top: 10px;
+}
+
+.faqtile-header:active .faqtile-dropdown-icon {
+    transform: scale(1.2);
+}
